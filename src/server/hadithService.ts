@@ -6,11 +6,10 @@ import { BOOKS_METADATA, LOCAL_HADITHS_DATABASE } from '../data/localHadiths';
 // In-memory memory cache for downloaded books data
 const booksDataCache: Record<string, HadithContent[]> = {};
 
-// CDN / GitHub RAW Mirror URLs
+// CDN / GitHub RAW Mirror URLs from Islami-fork/hadis-api-id
 const CDN_URLS = [
-  'https://cdn.jsdelivr.net/gh/gadingmst/hadits-api@main/data',
-  'https://raw.githubusercontent.com/gadingmst/hadits-api/main/data',
-  'https://raw.githubusercontent.com/Islami-fork/hadis-api-id/main/data'
+  'https://raw.githubusercontent.com/Islami-fork/hadis-api-id/main/data',
+  'https://cdn.jsdelivr.net/gh/Islami-fork/hadis-api-id@main/data'
 ];
 
 export function normalizePerawiSlug(slug: string): string {
