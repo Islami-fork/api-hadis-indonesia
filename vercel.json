@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "builds": [
     {
       "src": "server.ts",
@@ -9,6 +11,14 @@
   "routes": [
     {
       "src": "/api/(.*)",
+      "dest": "/server.ts"
+    },
+    {
+      "src": "/hadith/(.*)",
+      "dest": "/server.ts"
+    },
+    {
+      "src": "/hadith",
       "dest": "/server.ts"
     },
     {
@@ -28,8 +38,11 @@
       "dest": "/server.ts"
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/server.ts"
+      "dest": "/index.html"
     }
   ]
 }
