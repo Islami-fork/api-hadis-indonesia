@@ -1,0 +1,6 @@
+{
+  "name": "API Hadis Indonesia",
+  "description": "Web endpoint API Hadis Kutubut Tis'ah bahasa Indonesia dengan API tester interaktif, dokumentasi lengkap, dan dukungan deployment Vercel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
